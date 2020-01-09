@@ -93,7 +93,7 @@ Few extra steps will improve security:
    CAA www 0 "only allow specific hostname" letsencrypt.org
    ```
 3. Enable **DNSSEC** in **DNS** settings.
-4. Enable **HTST** by creating `nginx.conf` in the root of your project with:
+4. Enable **HSTS** by creating `nginx.conf` in the root of your project with:
 
    ```cpp
    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload";
